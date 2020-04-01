@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Our Stories!</title>
+	<link rel="stylesheet" type="text/css" href="styles/login.css">
+</head>
+<body>
+	<div class="content">
+	<span class="kiss"></span>
+	<form>
+		<table>
+			<caption>登录</caption>
+			<tr>
+
+				<td colspan="2"><span class="icon i-username"></span><input type="text" name="username" placeholder="昵称/电话号码"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="icon i-password"></span><input type="password" name="password" placeholder="密码"></td>
+			</tr>
+			<tr>
+				<td><span class="icon i-verification"></span><input id="check" type="text" placeholder="请输入验证码" onblur="return checkLoad()"></td>
+				<td><input id="code" name='code' type="button"></td>
+			</tr><tr><td colspan="2"></td>
+			</tr>
+			<tr>
+				<td><a href="forgetpassword.html">忘记密码</a></td>
+				<td class="right"> <a href="register.html">免费注册</a></td>
+			</tr>
+
+			<tr>
+				<td colspan="2"><input type="submit" value="登录"></td>
+			</tr>
+		</table>
+	</form>
+	
+	</div>
+
+	<script type="text/javascript" src="scripts/global.js"></script>
+	<script type="text/javascript" src="scripts/login.js"></script>
+</body>
+</html>

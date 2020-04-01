@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<title>Our Stories!</title>
+</head>
+<body>
+<form method="post" id="check" >
+<table>
+	<caption>注   册</caption>
+	<tr>
+		<th>昵    称：</th>
+		<td colspan="6"><input type="text" name="usename" id="a" placeholder="4~12个英文大小写字母" datatype="username" msg='请输入正确的昵称'></td>
+	</tr><tr><th></th><td  colspan="4"><div></div></td></tr>
+	
+	<tr>
+		<th>密    码：</th>
+		<td colspan="6"><input type="password" placeholder="6~20个大小写字母，数字或下划线" datatype="password" name="password" msg='请输入正确的密码'></td>
+	</tr><tr>
+		<th></th>
+		<td  colspan="4"><div></div></td></tr>
+
+	<tr>
+		<th>确认密码：</th>
+		<td colspan="6"><input type="password" placeholder="请再次输入密码" datatype="repeat" to="password" msg='请确认密码'></td>
+	</tr><tr>
+		<th></th>
+		<td  colspan="4"><div></div></td></tr>
+
+	<tr>
+		<th>性    别：</th>
+		<td colspan="2"><input type="radio" name="gender" datatype="group"  value="1" msg='请选择性别'>男</td>
+		<td colspan="2"><input type="radio" name="gender" datatype="group" value="0" msg='请选择性别'>女</td>
+	</tr><tr>
+		<th></th>
+		<td  colspan="4"><div></div></td></tr>
+
+	<tr>
+		<th>出生日期：</th>
+		<td><input type="text" datatype="year" name="date"  msg='请输入正确的日期'></td><td>年</td>
+		<td><input type="text" datatype="month" name="date"  msg='请输入正确的日期'></td><td>月</td>
+		<td><input type="text" id="day" name="date" datatype="groups" msg='请输入正确的日期'></td><td>日</td>
+	</tr><tr>
+		<th></th>
+		<td colspan="4"><div></div></td></tr>
+
+	<tr>
+		<th>手机号码：</th>
+		<td colspan="6"><input type="text" placeholder="请输入11位手机号码" datatype="tel" msg='请输入正确的手机号码'></td>
+	</tr><tr>
+		<th></th>
+		<td  colspan="4"><div></div></td></tr>
+
+	<tr>
+		<th>邮箱：</th>
+		<td colspan="6"><input type="text" name="email" placeholder="请输入邮箱地址" datatype="email" msg='请输入正确的邮箱地址'></td>
+	</tr><tr>
+		<th></th>
+		<td  colspan="4"><div></div></td></tr>
+
+	<tr>
+		<th>验证码：</th>
+		<td colspan="1"><input type="text" placeholder="请输入验证码" datatype="repeat" to="code" msg='验证码输入有误'></td>
+		<td><input id="code" name='code' type="button"></td>
+	</tr><tr>
+		<th></th>
+		<td  colspan="4"><div></div></td></tr>
+
+	<tr>
+		<th></th>
+		<td colspan="2"><input type="checkbox"  id="protocol"><span onclick='show()'>注册协议</span></td>
+	</tr>
+	<tr>
+		<th></th>
+		<td colspan="6"><input type="submit" id="submit" value="注  册"></td>
+	</tr>
+</table>
+
+</form>
+
+<div id='div1' class='div1'></div>
+<div id='div2' class='div2' draggable='true'>
+	
+	<h1>协议</h1>
+	<p>为了确保家庭和谐，关系和睦，根据《中华人名共和国民法通则》，《中华人民共和国合同法》以及国家相关法律法规，结合双方实际情况，经过双方友好协商，制订本协议。</p>
+	<p>本协议书内容即时生效：</p>
+	<ul>
+		<li>都是我的</li>
+		<li>都听我的</li>
+		<li>我说的都是对的</li>
+		<li>都是我的</li>
+		<li>都听我的</li>
+		<li>我说的都是对的</li>
+		<li>都是我的</li>
+		<li>都听我的</li>
+		<li>我说的都是对的</li>
+	</ul>
+	<input type='button' value="同意" onclick='closeAndCheck()' >
+	<input type='button' value='取消' onclick='justClose()'>
+</div>
+
+<link rel="stylesheet" type="text/css" href="styles/register.css">
+<script type="text/javascript" src="scripts/global.js"></script>
+<script type="text/javascript" src="scripts/register2.js"></script>
+</body>
+</html>
+

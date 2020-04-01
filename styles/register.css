@@ -1,0 +1,113 @@
+body{
+	z-index: 1;
+	font-family: Verdana,Geneva,Arial,sans-serif;
+	font-size: 17px;
+	background: #ffeded;
+}
+form{
+	padding: 30px;
+	margin-top: 5%;
+	display: inline;
+	background: url(../images/background.gif);
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	transform:translate(-50%);
+}
+table{
+	table-layout: fixed;
+	padding: 10px;
+	border: dotted 1px;
+}
+th{
+	text-align:right;
+	vertical-align: middle;
+	font-weight: normal;
+	width: 15%
+}
+td{
+	vertical-align: middle;
+	width: auto;
+}
+caption{
+	padding: 10px;
+	font-size: 150%;
+	font-weight: bold;
+}
+span:hover{
+	background-color:#4CAF50;
+	padding: 3px;
+	cursor: pointer;
+}
+
+input[type=text],[type=password],[type=button]{
+  width: 100%;
+  padding: 5px 5px;
+  margin: 0 0;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+input[type=button]{
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.error{
+	font-size: 60%;
+	color: #F00; 
+	height:20px;
+}
+.div1{
+	z-index: 2;
+	background:rgba(0,0,0,0.5);
+	position: fixed;
+	display: none;
+}
+.div2{
+	width: 60%;
+	position: fixed;
+	z-index: 3;
+	display: none;
+	border: 3px solid #fff;
+	background-color: #f5e2e9;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: left;
+	padding: 5%;
+	color: #0a2e47;
+	height: 450px;
+	overflow-y: auto;
+}
+
+.div2>input{
+	width: 20%;
+}
+.div2>h1{
+	text-align: center;
+	vertical-align: middle;
+	border: dotted;
+	padding: 1%;
+}
+
+.div2 li{
+	list-style: none;
+	margin:5px;
+	padding-left: 25px;
+	background: url('../images/heart.svg') no-repeat 0px 0px;
+	background-size: 20px,20px;
+}

@@ -1,0 +1,216 @@
+body{
+	font-family: 'KaiTi','Giddyup Std',"Microsoft YaHei",'YouYuan',sans-serif;
+	font-size: 24px;
+	margin:0 8%;
+}
+#head{
+	height: 150px;
+	background: #f8d5d5;
+
+}
+
+.container{
+	padding: 2% 5%;
+}
+
+.logo{
+	width: 100px;
+}
+#head img{
+	padding: 0;
+}
+
+#navigator{
+	background: #f99191;
+
+}
+#navigator ul{
+	margin: 0;
+}
+#navigator ul li{
+	display: inline-block;	
+	padding: 1%;
+	border-left: 1px solid #81817f;
+}
+
+#navigator ul li a{
+	display: inline;
+	text-decoration: none;
+	color: #81817f;
+	font: 80% "Microsoft YaHei",HeiTi,sans-serif;
+}
+
+#content{
+	position: relative;
+	padding: 2% 3%;
+	background: #fff7f7;
+	text-align: center;
+}
+h1{
+	font-size: 120%
+}
+#addcard{
+	float: right;
+	cursor: pointer;
+}
+#heart{
+	border-top: dashed 1px gray;
+}
+.card{
+	margin: 3%;
+	width: 210px;
+	height: 300px;
+	display: inline-block;
+}
+#template{
+	display: none;
+}
+.turn{
+	width:210px;
+	height:300px;
+	display: block;
+	position: relative;
+	transition:all 1s;
+	perspective:400px;
+	padding: 5%;
+}
+.turn>div{     /*包括背面和正面*/
+	transition:all 1s;
+	backface-visibility:hidden;
+}
+.turn:hover .front{
+	transform:rotateY(-180deg);
+}
+
+.front{
+	background: url(../images/100things/background-card-blue.jpg) no-repeat 0 0;
+}
+.front,.back{
+	width:210px;
+	height:300px;
+	position: absolute;
+	box-shadow: 0 0 3px 3px #F3275A;
+	border-radius: 10px;
+	background-size: 210px 300px;
+}
+.back{
+	transform: rotateY(180deg);
+	transition:all 1s;
+	background: url(../images/100things/background-back.jpg) no-repeat;
+}
+.turn:hover .back{
+	transform:none;
+}
+.text{
+	display: block;
+	width: 170px;
+	height: 240px;
+	position: absolute;
+	top:50px;
+	left: 20px;
+}
+
+input[type=text]{
+	width: 80%;
+	margin: 3% 8%;
+	padding: 3%;
+	border-radius: 3px;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+
+}
+
+.girl,.boy{
+	width: 35px;
+	height: 35px;
+	margin: 10% 12%;
+	box-shadow: 0 0 2px 2px red;
+	border-radius: 5px;
+}
+
+.girl:hover,.boy:hover{
+	cursor: pointer;
+
+}
+p{
+	text-align: center;
+}
+.foot{
+	font-size: 50%;
+	font-family: 'KaiTi',"Microsoft YaHei";
+	padding:  18%;
+}
+.back p{
+	font-size: 70%;
+	padding: 5%;
+	margin:0;
+}
+.delete{
+	float: right;
+	margin:8%;
+	cursor: pointer;
+	width: 20px;
+}
+
+
+
+
+#mask img{
+	position: fixed;
+	z-index:99;
+}
+#contentmask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	background: rgba(115,115,115,0.5);
+	display: none;
+}
+#newcard{
+	position:absolute;
+	top: 8%;
+	width: 80%;
+	left: 50%;
+	transform:translateX(-50%);
+	z-index: 3;
+	background: #fff7f7;
+	border:solid 1px  #808080;
+	text-align: left;
+	padding: 3%;
+	display: none;
+}
+
+#closeAdd{
+	width: 15px;
+	height: 15px;
+	float: right;
+	cursor: pointer;
+}
+
+input[type=button],[type=submit]{
+	
+	border: 1px solid #333;
+	border-radius: 15px;
+	margin: 2%;
+	padding: 1% 2%;
+	color: #fdfdfd;
+	cursor: pointer;
+}
+input[type=button]{
+	background: #81817f;
+	width: 8em;
+}
+input[type=submit]{
+	background: green;
+	margin-right: 20px;
+	float:  right;
+}
+#newcard input[type=text]{
+	width: 70%;
+	border: 1px solid #333;
+	padding: 1%;
+	margin:1%;
+}
